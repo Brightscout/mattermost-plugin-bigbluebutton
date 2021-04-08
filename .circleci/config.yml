@@ -30,6 +30,6 @@ jobs:
       # specify any bash command here prefixed with `run: `
       - run: make install-dependencies
       - run: go test -v ./...
-      - run: make quickbuild
+      - run: make build
       - store_artifacts:
           path: dist/bigbluebutton.tar.gz
